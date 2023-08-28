@@ -111,13 +111,6 @@ An attendance monitoring app can help users track attendance more efficiently an
 ## Getting Started
 For setting up your project locally, follow these simple steps.
 
-### Prerequisites
-
-You must have NPM(Node Package Manager) installed  in your system , If you dont we got you covered  
-
-  
-  [Install NPM](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
- 
 
 ### Installation
 
