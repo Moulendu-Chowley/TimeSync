@@ -9,21 +9,15 @@
 
   # TimeSync.
   ## A Flutter Based Time Management App
-  <b><a align="center" href="https://www.youtube.com/watch?v=AWZpPUwqZ2s">Watch Demo Video</a></b>
+  <b><a align="center" href="https://youtu.be/cjOZ84AFi3Y?si=wf5QKSibI46ClRaq">Watch Demo Video</a></b>
   <br/>
-  <b><a a align="center" href="or-jurm-nahi-b.us">Live</a><b>
 
   <p align="center">
-    Use this readme for getting stared with this project
+    Use this readme to get stared with this project
     <br />
-    <a href="https://github.com/arnab2001/Ledged"><strong>docs »</strong></a>
+    <a href="https://github.com/moulendu-chowley/TimeSync"><strong>docs »</strong></a>
     <br />
     <br />
-    <a href="#"> Blog </a>
-    ·
-    <a href="https://github.com/arnab2001/ledged/issues">Report Issues</a>
-    ·
-    <a href="https://github.com/arnab2001/ledged/issues">Request Feature</a>
   </p>
 </div>
 
@@ -59,48 +53,31 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## 🤩🤩About The Project🤩🤩
+## About The Project
+This Flutter-based Attendance Monitoring App is designed to simplify and streamline attendance tracking for various organizations and institutions. It provides a user-friendly interface for both administrators and attendees, allowing for efficient attendance management.
 
-https://user-images.githubusercontent.com/63441472/221376076-b5807660-1f6f-4e8f-8f20-27afd96658d1.mp4
-
-
-
-### 💭Inspiration :
-- Currently, Data in centralized systems is at the risk of being easily **tampered/modified** as there is a single entity(central authority) which is controlling them. For example , FIR copies being tampered/deleted or bank information altered by misusers or post morterm reports manipulated , etc.
-- To solve this problem , we came up with a solution using **blockchain**. 
--  <H4>Usecase :In law enforcement</H4> 
-&nbsp;&nbsp;  In the field of law enforcement , it is seen that crucial informations like FIR reports , Post-mortem reports are often **illegally tampered** , by influence or power , to favour a certain side. We can prevent this by using blockchain technology , which is immutable and non-destructable.
-
-
--  <H4>Another Usecase :In banking</H4>
-&nbsp;&nbsp; Most of banking and their servers are centeralized. This , however unwillingly , gives them supreme authority over our data, including access to our account balance , cheque details , money transfers , etc. Servers are prone to hacking or other data breach issues , also , the centeralized company might not be very trustworthy with our data. This issue is also valid for businesses of all scale.
-
-&nbsp;&nbsp;&nbsp;&nbsp; **Blockchain (One of the ways to implement decentralization)** steps into the picture to solve our problems. 
 
 ### 💡What problem does the project solve?
-- The project aims to solve the problem of **information manipulation** in public and private sectors.
-- The **DAPP** helps us to create **customizable** ledgers (records) that are stored in **decentralised blockchain** networks.
-- Ledged also allows us to upload files using **FileCoin** IPFS 
-- It also enables the user to systematically preview the past ledgers
-- This makes it immune to tampering or manipulation. 
-* **Transparency** of data is maintained.
+
+An attendance monitoring app can help users track attendance more efficiently and accurately. This can lead to improved time management and productivity, and increased compliance.
+- Lack of real-time attendance data
+- Help users to track their own attendance
+- Help users to Manage their time
 
 
 ### 🙌Overview 
-- In The landing Page, the user will be able to see features of our DAPP and also get started with our ledger
-- After clicking the **get started** button , the login happens using **Metamask** wallet
-- The user is redirected to their **profile page** , where they can view their **past ledgers** or **create new ledgers**
-- At New Ledger page , user can create their **custom fields and data** , and also upload **files**
-- They are also allowed to preview the file in the **preview section** before finally clicking **Deploy**
-- The previously created ledgers can be viewed under Previous Ledgers page.
+- On the Home Page, the user will be able to see the features of our APP and also get started with the monitoring
+- After clicking the **Add subject/task** button , And then **Add schedule** to add add your daily routine
+- Then user is redirected to their **Home page** , where they can view their daily schedule
+- Users can see their per subject or task attendance percentage on the Dashboard page.
+- They are also allowed to preview the days they have class and how many classes they attend.
 
 ### 💀 Challenges we ran into:
-  - Since blockchain is fairly new technology , we were finding it difficult to get solutions of out bugs due to smaller community.
-  - In the solidity file , i was using a struct of my own , but due to lack of resources , we faced problems initially.
-  - A very recent and major update of **Ether JS** made it very confusing , and we had to go through a lot of documentations
+  - Since we are new to Flutter, we encountered many difficulties like designing the pages.
+  - Connecting with a database like Firebase.
  
 ### 🔮 What's Next For Our Project:
-- Restructuring the view-ledger section for better readibility and better organization
+- Redesigning the UI
 - Optimization and minor bug fixes
 
 
@@ -111,15 +88,7 @@ https://user-images.githubusercontent.com/63441472/221376076-b5807660-1f6f-4e8f-
 ### 💻 Built With
 
 
-- <img src = "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" style="margin-top: 40px" height=30px width=30px > **React** - for building the frontend UI <br> 
-- <img src = "https://user-images.githubusercontent.com/63441472/190888196-9164551f-eb48-4da6-ab91-db17adad7c73.svg" height=30px width=30px>**Vite** - as Module bundler instead of webpack <br>
-- <img src = "https://user-images.githubusercontent.com/63441472/221376795-45668137-c096-470e-b288-ea98f1728e94.png" height=40px width=40px > **Etherium**- as main blockchain <br>
-- <img src = "https://user-images.githubusercontent.com/63441472/221376691-706e8087-7ba9-45be-9d60-583b0fdf518d.png" height=40px width=40px> **Solidity**- for writing smart contract <br>
-- <img src = "https://user-images.githubusercontent.com/63441472/221376973-6ecb124f-12b4-429f-86ac-96afe68d258c.png" height=40px width=40px > **5ire** - RPC to host our dapp and as our main blockchain service<br>
-- <img src = "https://user-images.githubusercontent.com/63441472/221377772-d474f54c-6049-467c-b830-7c8a220bce5d.png" height=40px width=40px> **Filecoin**- as IPFS<br>
-- <img src = "https://user-images.githubusercontent.com/63441472/190890501-54045447-d458-4413-a1fa-91a4216bfb44.svg" height=40px width=80px> -  Build on Top of **Polygon** chain <br>
-- GoDaddy for our domain registry 
-
+- <img src = "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png" style="margin-top: 40px" height=30px width=30px > **Flutter** - for building the frontend UI <br> 
 
 
 
@@ -131,13 +100,6 @@ https://user-images.githubusercontent.com/63441472/221376076-b5807660-1f6f-4e8f-
 ## Getting Started
 For setting up your project locally, follow these simple steps.
 
-### Prerequisites
-
-You must have NPM(Node Package Manager) installed  in your system , If you dont we got you covered  
-
-  
-  [Install NPM](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
- 
 
 ### Installation
 
@@ -145,31 +107,21 @@ _How to setup this project_
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/arnab2001/Ledged.git
+   git clone https://github.com/Moulendu-Chowley/TimeSync.git
    ```
-3. Install all the NPM packages
+2. Navigate to the project directory
    ```sh
-   npm install
+   cd attendance-monitoring-app
    ```
-4. configure `.env` and add
-   ```env
-   DB_CONNECT = 'mongodb+srv://<username>:<password>@cluster0.dehf4yw.mongodb.net/?retryWrites=true&w=majority'
+
+3.  Install dependencies
+   ```sh
+   flutter pub get
    ```
- 
-5. Create a wallet.json file and add your public and private key
-   ```json
-   {
-    "privateKey": "<private_key>",
-    "publicKey": "<public_key>"
-    }
-    ```
-6. Then import wallet using the private key, use the following command
+
+4. run 
   ```sh
-  Metamask
-  ```
-7. run 
-  ```sh
-  npm start dev
+  flutter run
    ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,21 +139,10 @@ _How to setup this project_
 <!-- ROADMAP -->
 ## Roadmap
 &nbsp; 
-- [x] landing page
-- [x] Avatar component
-- [x] Ledger page
-- [x] PastLedger page
-- [x] Adding smart contract 
-- [x] Intigrate 5ire
-- [x] Intigrate filecoin
-- [x] Add backend for Autosave 
-- [ ] deploy in digital ocean
-
-
-
-See the [open issues](https://github.com/arnab2001/Ledged/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [x] Login page
+- [x] Home page
+- [x] Dashboard page
+- [x] Profile page
 
 
 
@@ -242,10 +183,10 @@ Distributed under the MIT License
 <br>
 <div>
 <h1 align="center">
- <b>Made with ❤️ by team Bugbyte
+ <b>Made with ❤️ by team Code Breakers
 <h1>
-<a href="https://github.com/arnab2001/Ledged/contributors">
-  <img src="https://contrib.rocks/image?repo=arnab2001/ledged&&max=817" />
+<a href="https://github.com/moulendu-chowley/timesync/contributors">
+  <img src="https://contrib.rocks/image?repo=Moulendu-Chowley/TimeSync" />
 </a>
 </div>
 
