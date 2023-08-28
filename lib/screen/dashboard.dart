@@ -4,21 +4,21 @@ import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 import 'home.dart';
-class dash extends StatefulWidget {
-  const dash({Key? key}) : super(key: key);
+class Dash extends StatefulWidget {
+  const Dash({Key? key}) : super(key: key);
 
   @override
-  State<dash> createState() => _dashState();
+  State<Dash> createState() => _DashState();
 }
 
-class _dashState extends State<dash> {
+class _DashState extends State<Dash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         bottomNavigationBar: Container(
           //color: Colors.black,
-          padding: EdgeInsets.only(left:40,right:40),
-          decoration: BoxDecoration(borderRadius: BorderRadius.only(
+          padding: const EdgeInsets.only(left:40,right:40),
+          decoration: const BoxDecoration(borderRadius: BorderRadius.only(
             topLeft: Radius.circular(10),
             topRight: Radius.circular(10),
           ),
@@ -44,7 +44,7 @@ class _dashState extends State<dash> {
                 icon: const Icon(Icons.home),
                 onPressed: () {
                   Navigator.pushReplacement(
-                      context, MaterialPageRoute(builder: (context) => Home(name: " ",),));
+                      context, MaterialPageRoute(builder: (context) => const Home(name: " ",),));
                   //write your script
                 },
               ),
@@ -53,7 +53,7 @@ class _dashState extends State<dash> {
                 icon: const Icon(Icons.person),
                 onPressed: () {
                   Navigator.pushReplacement(
-                      context, MaterialPageRoute(builder: (context) => profile(),));
+                      context, MaterialPageRoute(builder: (context) => const Profile(),));
                 },
                 //write your script
 
@@ -61,7 +61,7 @@ class _dashState extends State<dash> {
             ], // This trailing comma makes auto-formatting nicer for build methods.
           ),
         ),
-      body:Container(
+      body:SizedBox(
        height: double.infinity,
         width: double.infinity,
         child: Column(
@@ -70,10 +70,10 @@ class _dashState extends State<dash> {
           children: [
             Container(
 
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               height: 300,
               width: 450,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   boxShadow : [BoxShadow(
                       color: Color.fromRGBO(0, 0, 0, 0.15000000596046448),
                       offset: Offset(1,2),
@@ -87,17 +87,17 @@ class _dashState extends State<dash> {
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Icon(Icons.dashboard,size: 40,),
                       Text("Dashboard",style: TextStyle(fontSize:30),)
                     ],
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -116,38 +116,38 @@ class _dashState extends State<dash> {
                         progressColor: Colors.lightBlue,
                         backgroundColor: Colors.white54,
                         circularStrokeCap: CircularStrokeCap.round,
-                        center: Text("85%",style: TextStyle(fontSize: 25),),)
+                        center: const Text("85%",style: TextStyle(fontSize: 25),),)
                     ],
 
                   ),
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      ElevatedButton(onPressed: (){}, child:Text("Add Subject"),
-                        style: ElevatedButton.styleFrom(primary: Colors.lightBlueAccent,
-                            shape: RoundedRectangleBorder(borderRadius:BorderRadius.all(Radius.circular(10)))),
+                      ElevatedButton(onPressed: (){},
+                        style: ElevatedButton.styleFrom(backgroundColor: Colors.lightBlueAccent,
+                            shape: const RoundedRectangleBorder(borderRadius:BorderRadius.all(Radius.circular(10)))), child:const Text("Add Subject"),
                       ),
-                      SizedBox(width: 2,),
-                      ElevatedButton(onPressed: (){}, child:Text("Add Schedule"),
-                        style: ElevatedButton.styleFrom(primary: Colors.lightBlueAccent,
-                            shape: RoundedRectangleBorder(borderRadius:BorderRadius.all(Radius.circular(10)))),
+                      const SizedBox(width: 2,),
+                      ElevatedButton(onPressed: (){},
+                        style: ElevatedButton.styleFrom(backgroundColor: Colors.lightBlueAccent,
+                            shape: const RoundedRectangleBorder(borderRadius:BorderRadius.all(Radius.circular(10)))), child:const Text("Add Schedule"),
                       ),
 
-                      SizedBox(width: 2,),
+                      const SizedBox(width: 2,),
 
                     ],
                   )
                 ],
               )
             ),
-          Text("My Subject",style: TextStyle(fontSize: 30,fontWeight:FontWeight.w700)),
-            SizedBox(height: 20,),
+          const Text("My Subject",style: TextStyle(fontSize: 30,fontWeight:FontWeight.w700)),
+            const SizedBox(height: 20,),
             Expanded(child:
             ListView(
               children: [
                 Container(
-                  decoration:BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
+                  decoration:const BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
@@ -168,8 +168,8 @@ class _dashState extends State<dash> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Physics",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
-                        SizedBox(height: 5,),
+                        const Text("Physics",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
+                        const SizedBox(height: 5,),
                         LinearPercentIndicator(
                             lineHeight: 10,
                             percent: 0.74,
@@ -177,15 +177,15 @@ class _dashState extends State<dash> {
                             backgroundColor: Colors.lightBlue.shade100,
 
                         ),
-                        SizedBox(height: 5,),
-                        Text("Attendance: 74%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),),
+                        const SizedBox(height: 5,),
+                        const Text("Attendance: 74%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),),
                       ],
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 Container(
-                  decoration:BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
+                  decoration:const BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
@@ -207,8 +207,8 @@ class _dashState extends State<dash> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Maths",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
-                        SizedBox(height: 5,),
+                        const Text("Maths",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
+                        const SizedBox(height: 5,),
                         LinearPercentIndicator(
                           lineHeight: 10,
                           percent: 0.87,
@@ -216,15 +216,15 @@ class _dashState extends State<dash> {
                           backgroundColor: Colors.lightBlue.shade100,
 
                         ),
-                        SizedBox(height: 5,),
-                        Text("Attendance: 87%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
+                        const SizedBox(height: 5,),
+                        const Text("Attendance: 87%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
               ],
             ),
             ),
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 Container(
-                  decoration:BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
+                  decoration:const BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
@@ -245,8 +245,8 @@ class _dashState extends State<dash> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Biology",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
-                        SizedBox(height: 5,),
+                        const Text("Biology",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
+                        const SizedBox(height: 5,),
                         LinearPercentIndicator(
                           lineHeight: 10,
                           percent: 0.82,
@@ -254,14 +254,14 @@ class _dashState extends State<dash> {
                           backgroundColor: Colors.lightBlue.shade100,
 
                         ),
-                        SizedBox(height: 5,),
-                        Text("Attendance: 82%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
+                        const SizedBox(height: 5,),
+                        const Text("Attendance: 82%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
                       ],
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
-                Container(decoration:BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
+                const SizedBox(height: 10,),
+                Container(decoration:const BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(10),
                   topRight: Radius.circular(10),
                   bottomLeft: Radius.circular(10),
@@ -282,8 +282,8 @@ class _dashState extends State<dash> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Chemistry",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
-                        SizedBox(height: 5,),
+                        const Text("Chemistry",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
+                        const SizedBox(height: 5,),
                         LinearPercentIndicator(
                           lineHeight: 10,
                           percent: 0.86,
@@ -291,15 +291,15 @@ class _dashState extends State<dash> {
                           backgroundColor: Colors.lightBlue.shade100,
 
                         ),
-                        SizedBox(height: 5,),
-                        Text("Attendance: 86%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
+                        const SizedBox(height: 5,),
+                        const Text("Attendance: 86%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
                       ],
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 Container(
-                  decoration:BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
+                  decoration:const BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
@@ -320,8 +320,8 @@ class _dashState extends State<dash> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Zology",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
-                        SizedBox(height: 5,),
+                        const Text("Zology",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
+                        const SizedBox(height: 5,),
                         LinearPercentIndicator(
                           lineHeight: 10,
                           percent: 0.88,
@@ -329,15 +329,15 @@ class _dashState extends State<dash> {
                           backgroundColor: Colors.lightBlue.shade100,
 
                         ),
-                        SizedBox(height: 5,),
-                        Text("Attendance: 88%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
+                        const SizedBox(height: 5,),
+                        const Text("Attendance: 88%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
                       ],
                     ),
                   ),
                 ),
-                SizedBox(height: 10,),
+                const SizedBox(height: 10,),
                 Container(
-                  decoration:BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
+                  decoration:const BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
@@ -358,8 +358,8 @@ class _dashState extends State<dash> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Botany",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
-                        SizedBox(height: 5,),
+                        const Text("Botany",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
+                        const SizedBox(height: 5,),
                         LinearPercentIndicator(
                           lineHeight: 10,
                           percent: 0.78,
@@ -367,14 +367,14 @@ class _dashState extends State<dash> {
                           backgroundColor: Colors.lightBlue.shade100,
 
                         ),
-                        SizedBox(height: 5,),
-                        Text("Attendance: 78%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
+                        const SizedBox(height: 5,),
+                        const Text("Attendance: 78%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),)
                       ],
                     ),
                   ),
-                ),SizedBox(height: 10,),
+                ),const SizedBox(height: 10,),
                 Container(
-                  decoration:BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
+                  decoration:const BoxDecoration(color:Colors.white24,borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
@@ -395,8 +395,8 @@ class _dashState extends State<dash> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Computer",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
-                        SizedBox(height: 5,),
+                        const Text("Computer",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700)),
+                        const SizedBox(height: 5,),
                         LinearPercentIndicator(
                           lineHeight: 10,
                           percent: 0.90,
@@ -404,8 +404,8 @@ class _dashState extends State<dash> {
                           backgroundColor: Colors.lightBlue.shade100,
 
                         ),
-                        SizedBox(height: 5,),
-                        Text("Attendance: 90%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),),
+                        const SizedBox(height: 5,),
+                        const Text("Attendance: 90%",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w700),),
 
 
                       ],

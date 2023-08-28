@@ -14,9 +14,9 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
- var _email = TextEditingController();
- var _password=TextEditingController();
- var _username=TextEditingController();
+ final _email = TextEditingController();
+ final _password=TextEditingController();
+ final _username=TextEditingController();
  @override
  void initState() {
    super.initState();
@@ -24,7 +24,6 @@ class _LoginState extends State<Login> {
    void storedata() async {
      User user = User(_email.text, _password.text);
      String userdata = jsonEncode(user);
-     print(userdata);
      var sharedPef = await SharedPreferences.getInstance();
      sharedPef.setString("userdata", userdata);
    }
@@ -39,7 +38,7 @@ class _LoginState extends State<Login> {
        height: double.infinity,
        width: double.infinity,
 
-         decoration: BoxDecoration(image:  DecorationImage(
+         decoration: const BoxDecoration(image:  DecorationImage(
            fit: BoxFit.fill,
            image: ExactAssetImage("assets/images/Group 13.png"),
          )),
@@ -49,65 +48,65 @@ class _LoginState extends State<Login> {
            child: Column(
              children: [
                Container(
-                decoration:BoxDecoration(color:Colors.white,borderRadius: BorderRadius.only(
+                decoration:const BoxDecoration(color:Colors.white,borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(30),
                 topRight: Radius.circular(30),)),
                  height: 440,
                  width: 500,
 
-                 padding: EdgeInsets.all(15),
+                 padding: const EdgeInsets.all(15),
                  child: Column(
                    mainAxisAlignment: MainAxisAlignment.start,
                  children:[
-                   Text("Login",style: TextStyle(fontSize: 30,fontWeight:FontWeight.w800),),
-                 SizedBox(height: 8,),
-                   Text("login to continue...",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w500),),
-                   SizedBox(height: 8,),
+                   const Text("Login",style: TextStyle(fontSize: 30,fontWeight:FontWeight.w800),),
+                 const SizedBox(height: 8,),
+                   const Text("login to continue...",style: TextStyle(fontSize: 20,fontWeight:FontWeight.w500),),
+                   const SizedBox(height: 8,),
 
                    TextField(
                    controller:_email ,
                    decoration: InputDecoration(
-                       hintStyle: TextStyle(color: Colors.blue),
+                       hintStyle: const TextStyle(color: Colors.blue),
                        hintText: "Username",
                        labelText: "usename",
                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20))
                    ),
                  ),
-                 SizedBox(height: 11,),
+                 const SizedBox(height: 11,),
                    TextField(
                      controller:_username ,
                      decoration: InputDecoration(
-                         hintStyle: TextStyle(color: Colors.blue),
+                         hintStyle: const TextStyle(color: Colors.blue),
                          hintText: "Email",
                          labelText: "email",
                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(20))
                      ),
                    ),
-                   SizedBox(height: 11,),
+                   const SizedBox(height: 11,),
                  TextField(
                    controller: _password,
                    obscureText: true,
                    decoration: InputDecoration(
-                       hintStyle: TextStyle(color: Colors.blue),
+                       hintStyle: const TextStyle(color: Colors.blue),
 
                        hintText: "password",
                        labelText: "password",
                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20))
 
                    ),),
-                   SizedBox(height: 11,),
+                   const SizedBox(height: 11,),
 
                    // ignore: use_build_context_synchronously
                    ElevatedButton(onPressed: ()async{
                      storedata();
                      var sharedPef= await SharedPreferences.getInstance();
-                     sharedPef.setBool(SplashState.KEYLOGIN,true);
+                     sharedPef.setBool(SplashState.keylogin,true);
                      Navigator.pushReplacement(
                      context, MaterialPageRoute(builder: (context) =>Home(name:_email.text)));
 
                    },
 
-                       child:Text("Login"),
+                       child:const Text("Login"),
 
                    )
                    ] ,

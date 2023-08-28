@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:logins/screen/dashboard.dart';
-import 'package:logins/screen/home.dart';
-import 'package:logins/screen/profile.dart';
 import 'package:logins/screen/splash.dart';
 
-import 'screen/login.dart';
 
 
 void main() {
@@ -19,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'TimeSync.',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
