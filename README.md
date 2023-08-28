@@ -91,15 +91,7 @@ An attendance monitoring app can help users track attendance more efficiently an
 ### 💻 Built With
 
 
-- <img src = "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" style="margin-top: 40px" height=30px width=30px > **React** - for building the frontend UI <br> 
-- <img src = "https://user-images.githubusercontent.com/63441472/190888196-9164551f-eb48-4da6-ab91-db17adad7c73.svg" height=30px width=30px>**Vite** - as Module bundler instead of webpack <br>
-- <img src = "https://user-images.githubusercontent.com/63441472/221376795-45668137-c096-470e-b288-ea98f1728e94.png" height=40px width=40px > **Etherium**- as main blockchain <br>
-- <img src = "https://user-images.githubusercontent.com/63441472/221376691-706e8087-7ba9-45be-9d60-583b0fdf518d.png" height=40px width=40px> **Solidity**- for writing smart contract <br>
-- <img src = "https://user-images.githubusercontent.com/63441472/221376973-6ecb124f-12b4-429f-86ac-96afe68d258c.png" height=40px width=40px > **5ire** - RPC to host our dapp and as our main blockchain service<br>
-- <img src = "https://user-images.githubusercontent.com/63441472/221377772-d474f54c-6049-467c-b830-7c8a220bce5d.png" height=40px width=40px> **Filecoin**- as IPFS<br>
-- <img src = "https://user-images.githubusercontent.com/63441472/190890501-54045447-d458-4413-a1fa-91a4216bfb44.svg" height=40px width=80px> -  Build on Top of **Polygon** chain <br>
-- GoDaddy for our domain registry 
-
+- <img src = "https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png" style="margin-top: 40px" height=30px width=30px > **Flutter** - for building the frontend UI <br> 
 
 
 
@@ -197,7 +189,7 @@ Distributed under the MIT License
  <b>Made with ❤️ by team Code Breakers
 <h1>
 <a href="https://github.com/moulendu-chowley/timesync/contributors">
-  <img src="https://contrib.rocks/image?repo=arnab2001/ledged&&max=817" />
+  <img src="https://contrib.rocks/image?repo=Moulendu-Chowley/TimeSync" />
 </a>
 </div>
 
