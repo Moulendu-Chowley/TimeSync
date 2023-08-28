@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Moulendu-Chowley/TimeSync/">
-    <img src="https://cdn.discordapp.com/attachments/927930447118364672/1145660334103855174/Group_14.png" alt="Logo" width="120" height="120">
+    <img src="https://cdn.discordapp.com/attachments/927930447118364672/1145660334103855174/Group_14.png" alt="Logo" width="690" height="120">
   </a>
 
   # TimeSync.
