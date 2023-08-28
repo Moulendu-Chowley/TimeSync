@@ -9,7 +9,7 @@
 
   # TimeSync.
   ## A Flutter Based Time Management App
-  <b><a align="center" href="">Watch Demo Video</a></b>
+  <b><a align="center" href="https://youtu.be/cjOZ84AFi3Y?si=wf5QKSibI46ClRaq">Watch Demo Video</a></b>
   <br/>
 
   <p align="center">
@@ -54,10 +54,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-**
-
-
+This Flutter-based Attendance Monitoring App is designed to simplify and streamline attendance tracking for various organizations and institutions. It provides a user-friendly interface for both administrators and attendees, allowing for efficient attendance management.
 
 
 ### 💡What problem does the project solve?
