@@ -223,7 +223,7 @@ class _HomeState extends State<Home> {
                       ),
                       Container(
                         height: 120,
-                        width: 350,
+                        width: 340,
                         decoration: const BoxDecoration(
                           color: Colors.lightBlue,
                           borderRadius: BorderRadius.only(
@@ -355,7 +355,7 @@ class _HomeState extends State<Home> {
                       ),
                       Container(
                         height: 120,
-                        width: 350,
+                        width: 340,
                         decoration: const BoxDecoration(
                           color: Colors.lightBlue,
                           borderRadius: BorderRadius.only(
@@ -489,7 +489,7 @@ class _HomeState extends State<Home> {
                       ),
                       Container(
                         height: 120,
-                        width: 350,
+                        width: 340,
                         decoration: const BoxDecoration(
                           color: Colors.lightBlue,
                           borderRadius: BorderRadius.only(
@@ -623,7 +623,7 @@ class _HomeState extends State<Home> {
                       ),
                       Container(
                         height: 120,
-                        width: 350,
+                        width: 340,
                         decoration: const BoxDecoration(
                           color: Colors.lightBlue,
                           borderRadius: BorderRadius.only(
@@ -757,7 +757,7 @@ class _HomeState extends State<Home> {
                       ),
                       Container(
                         height: 120,
-                        width: 350,
+                        width: 340,
                         decoration: const BoxDecoration(
                           color: Colors.lightBlue,
                           borderRadius: BorderRadius.only(
@@ -891,7 +891,7 @@ class _HomeState extends State<Home> {
                       ),
                       Container(
                         height: 120,
-                        width: 350,
+                        width: 340,
                         decoration: const BoxDecoration(
                           color: Colors.lightBlue,
                           borderRadius: BorderRadius.only(
